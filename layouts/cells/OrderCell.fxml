@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="cellContainer" minWidth="300.0" prefHeight="81.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+   <VBox alignment="CENTER_LEFT" prefHeight="200.0" HBox.hgrow="SOMETIMES">
+      <children>
+         <Label fx:id="itemLabel" layoutX="82.0" layoutY="100.0" text="Cheese pizza">
+            <font>
+               <Font size="22.0" />
+            </font>
+         </Label>
+           <Label fx:id="idLabel" text="Order #2">
+               <font>
+                   <Font size="15.0" />
+               </font>
+         </Label>
+      </children>
+      <padding>
+         <Insets left="20.0" />
+      </padding>
+   </VBox>
+   <Label fx:id="descriptionLabel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="With lot of tomato, and extra cheese." HBox.hgrow="ALWAYS">
+      <HBox.margin>
+         <Insets left="20.0" right="20.0" />
+      </HBox.margin>
+   </Label>
+   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+      <children>
+      
+           <Label fx:id="priceLabel" text="\$5.00">
+               <font>
+                   <Font size="15.0" />
+               </font>
+         </Label>
+         <Label fx:id="stateLabel" layoutX="42.0" layoutY="40.0" styleClass="tag" text="PLACED">
+            <font>
+               <Font size="8.0" />
+            </font>
+            <padding>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+            <VBox.margin>
+               <Insets top="5.0" />
+            </VBox.margin>
+         </Label>
+      </children>
+   </VBox>
+</HBox>

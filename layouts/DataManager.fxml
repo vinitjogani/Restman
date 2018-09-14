@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane prefHeight="471.0" prefWidth="706.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" styleClass="backButton" text="Back"
+            AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="11.0"/>
+    <Label fx:id="sceneTitle" layoutX="80.0" layoutY="13.0" prefHeight="25.0" styleClass="sceneTitle"
+           text="Last week statistics" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="13.0"/>
+
+    <SplitPane dividerPositions="0.4" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0"
+               AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+        <VBox fx:id="primaryBox">
+            <HBox fx:id="searchBox" prefHeight="41.0" styleClass="hbox">
+                <Label layoutX="175.0" layoutY="56.0" maxHeight="1.7976931348623157E308"
+                       maxWidth="1.7976931348623157E308" styleClass="optionsLabel" text="Chart types"
+                       HBox.hgrow="ALWAYS">
+                </Label>
+            </HBox>
+            <ListView fx:id="primaryList" VBox.vgrow="ALWAYS">
+                <HBox prefHeight="91.0">
+                    <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#busy"
+                           style="-fx-font-size: 18px;" text="Average Customers per hour on a given weekday" HBox.hgrow="ALWAYS">
+                        <padding>
+                            <Insets left="30.0"/>
+                        </padding>
+                    </Label>
+                </HBox>
+                <HBox prefHeight="91.0">
+                    <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#customers"
+                           style="-fx-font-size: 18px;" text="Total Customers Served per Weekday" HBox.hgrow="ALWAYS">
+                        <padding>
+                            <Insets left="30.0"/>
+                        </padding>
+                    </Label>
+                </HBox>
+                <HBox prefHeight="91.0">
+                    <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                           onMouseClicked="#consumption" style="-fx-font-size: 18px;" text="Menu item consumption"
+                           HBox.hgrow="ALWAYS">
+                        <padding>
+                            <Insets left="30.0"/>
+                        </padding>
+                    </Label>
+                </HBox>
+                <HBox prefHeight="91.0">
+                    <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#sales"
+                           style="-fx-font-size: 18px;" text="Value of sales" HBox.hgrow="ALWAYS">
+                        <padding>
+                            <Insets left="30.0"/>
+                        </padding>
+                    </Label>
+                </HBox>
+            </ListView>
+        </VBox>
+        <VBox fx:id="secondaryBox" alignment="TOP_CENTER">
+            <HBox fx:id="optionsBox" prefHeight="41.0" styleClass="hbox">
+                <DatePicker fx:id="startDate" prefHeight="38.0" promptText="Start date" HBox.hgrow="NEVER"/>
+                <DatePicker fx:id="endDate" prefHeight="38.0" promptText="End date" HBox.hgrow="NEVER"/>
+                <Label maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS"/>
+                <Button mnemonicParsing="false" onAction="#update" text="Update">
+                    <HBox.margin>
+                        <Insets right="10.0" top="5.0"/>
+                    </HBox.margin>
+                </Button>
+            </HBox>
+        </VBox>
+    </SplitPane>
+</AnchorPane>

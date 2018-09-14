@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="cellContainer" alignment="CENTER" prefHeight="91.0" prefWidth="301.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+
+    <Label fx:id="tableLabel" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="120.0" text="Table #1" HBox.hgrow="ALWAYS">
+        <HBox.margin>
+            <Insets left="30.0" />
+        </HBox.margin>
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="81.0" prefWidth="91.0" HBox.hgrow="NEVER">
+        <children>
+            <Label fx:id="occupiedLabel" text="0">
+            <font>
+               <Font size="25.0" />
+            </font></Label>
+         <Label fx:id="occupiedLabel1" layoutX="65.0" layoutY="22.0" text="Customers">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Label>
+
+        </children>
+        <HBox.margin>
+            <Insets left="20.0" />
+        </HBox.margin>
+    </VBox>
+
+
+</HBox>

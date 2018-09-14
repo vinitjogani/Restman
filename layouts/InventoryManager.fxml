@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane prefHeight="469.0" prefWidth="684.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" styleClass="backButton" text="Back"
+            AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="11.0"/>
+    <Label fx:id="sceneTitle" layoutX="80.0" layoutY="13.0" prefHeight="25.0" styleClass="sceneTitle"
+           text="Inventory manager" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="13.0"/>
+    <Button fx:id="actionButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#action"
+            styleClass="actionButton" text="New" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="11.0"/>
+
+    <ScrollPane fitToWidth="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                AnchorPane.topAnchor="50.0">
+        <Accordion fx:id="ingredientList" layoutX="60.0" layoutY="83.0" maxHeight="1.7976931348623157E308"
+                   maxWidth="1.7976931348623157E308">
+            <panes>
+            </panes>
+        </Accordion>
+    </ScrollPane>
+
+    <TextField fx:id="searchField" layoutX="175.0" layoutY="56.0" onKeyReleased="#search" prefHeight="30.0"
+               prefWidth="286.0" promptText="Search..." AnchorPane.rightAnchor="73.0" AnchorPane.topAnchor="10.0"/>
+
+
+</AnchorPane>

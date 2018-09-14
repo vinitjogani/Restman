@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="cellContainer" alignment="CENTER" prefHeight="81.0" prefWidth="401.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+
+    <Label fx:id="tableLabel" prefHeight="30.0" prefWidth="120.0" text="Table #15" HBox.hgrow="SOMETIMES">
+        <HBox.margin>
+            <Insets left="30.0" />
+        </HBox.margin>
+      <font>
+         <Font size="15.0" />
+      </font>
+    </Label>
+   <VBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="81.0" prefWidth="195.0" HBox.hgrow="ALWAYS">
+      <children>
+         <Label fx:id="pendingLabel" text="2 pending orders" />
+         <Label fx:id="confirmedLabel" layoutX="110.0" layoutY="42.0" text="3 confirmed orders" />
+      </children>
+      <HBox.margin>
+         <Insets left="20.0" />
+      </HBox.margin>
+   </VBox>
+   <Label fx:id="billLabel" layoutX="40.0" layoutY="36.0" prefHeight="30.0" prefWidth="90.0" text="\$12.00">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+
+</HBox>
